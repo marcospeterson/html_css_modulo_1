@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style(modulo_1).css">
+    <link rel="shortcut icon" href="fav_html/favicon.ico" type="image/x-icon">
+    <title>Tags html </title><!-- &lt;  &gt; -->
+</head>
+<body>
+    <nav>
+        <a href="#" target="_self" >Módulo 2 </a>
+        <a href="#" target="_self" >Módulo 3 </a>
+        <a href="#" target="_self" >Módulo 4 </a>
+        <a href="#" target="_self" >Módulo 5 </a>
+    </nav>
+    <header>
+        <h1>TAGS HTML 5 </h1>
+        <p>Tudo oque você precisa saber sobre HTML5
+        </p>
+    </header>
+    <main>
+    
+        <article>
+            <h2>Oque é HTML?</h2>
+                <p>O HTML, conhecido como Linguagem de Marcação de Hipertexto,(HyperText Markup Language) é a base fundamental para construir páginas da web e aplicativos online. Ele usa uma série de marcações para definir a estrutura e o estilo de um documento. Quando falamos de hipertexto, estamos nos referindo a textos que têm links para outros textos, criando uma experiência de navegação conectada.
+
+                    Ao contrário das linguagens de programação, o HTML não tem o poder de criar funcionalidades dinâmicas. Sua função principal é organizar o conteúdo da página, permitindo que os usuários criem seções, parágrafos e links por meio de elementos, tags e atributos. Embora seja essencial para apresentar e organizar informações na web, para funcionalidades mais avançadas e interações dinâmicas, geralmente é combinado com outras tecnologias, como CSS <img src="Favicon/favicon_io/favicon-32x32.png" class="imgfavi"> (para estilos) e JavaScript <img src="Favicon/favicon-32x32.png" class="imgfavi"> (para interatividade).</p>
+
+                    
+                
+                <h3>A estruta básica do html segue o seguinte padrão:</h3>
+                <div class="base">
+                <p>&lt;!DOCTYPE html><br>
+                    &lt;html lang="pt-br"&gt;<br>
+                    &lt;head><br>
+                        &lt;meta charset="UTF-8"><br>
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"><br>
+                        &lt;title>Tags HTML&lt;/title><br>
+                    &lt;/head><br>
+                    &lt;body><br>
+                        <!-- Conteúdo do corpo do documento vai aqui -->
+                    
+                    &lt;/body><br>
+                    &lt;/html></p>
+                </div>
+                    <p><span class="lol">&lt;!DOCTYPE html></span>: Esta é uma declaração do tipo de documento (Document Type Declaration - DTD) para indicar ao navegador que o documento HTML está seguindo a especificação HTML5.<br><br>
+
+                        <span class="codigo">X&lt;html lang="pt-br"></span>: Abre o elemento raiz do documento HTML. O atributo lang é usado para indicar o idioma do documento. Neste caso, "pt-br" representa o português brasileiro.<br><br>
+                        
+                        <span class="codigo">&lt;head></span>: Contém metadados sobre o documento, como o conjunto de caracteres utilizado, configurações de viewport (para tornar o site responsivo) e o título da página.<br><br>
+                        
+                        <span class="codigo">&lt;meta charset="UTF-8"></span>: Especifica que o conjunto de caracteres UTF-8 deve ser usado para interpretar o conteúdo da página. Isso é importante para garantir que caracteres especiais e acentos sejam exibidos corretamente.<br><br>
+                        
+                        <span class="codigo">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"></span>: Configurações relacionadas à visualização em dispositivos móveis. width=device-width significa que a largura da tela deve ser igual à largura do dispositivo, e initial-scale=1.0 define o nível de zoom inicial.<br><br>
+                        
+                        <span class="codigo">&lt;title></span>Tags HTML</title>: Define o título da página que será exibido na aba do navegador ou na barra de título.<br><br>
+                        
+                        <span class="codigo">&lt;body></span>: Contém o conteúdo real da página, como texto, imagens, links, etc. &lt;body> e &lt;/body>.<br><br></p>
+                        <hr>
+        </article>
+        <article>
+
+            <h2>Imagens e direitos autorais</h2><br>
+                <h3>PNG E JPEG</h3>
+
+                <p>
+                    png: fundo transparente, qualidade melhor, imagens menos compactadas mas permite animações e gifs.(recomendo usar esse tipo de arquivo)<br>
+                    jpeg: Não tem fundo transparente; imagens mais compactas, porém, ao dar zoom a resolução diminui.
+
+                <h3>Imagens dinâmicas</h3><!-- picture serve para colocar imagens que se adaptam, basicamente -->
+                    <picture>
+                        <source media="(max-width: 550px)" srcset="img/fotop.png" type="image/png">
+                        
+                        <img src="img/fotom.png" alt="imagem flexível">
+                            </picture>
+                    
+                        <P>Para colocar imagens dinâmicas, primeiro temos que adicionar a tag <B>PICTURE</B>, que serve, basicamente para poder colocar imagens que se adaptam ao tamanho do dispositivo. Depois coloque  uma imagem como tamanho padrão, e veja abaixo o código usado para colocar imagens que se adaptam</P>
+                            
+                        <p>Uma coisa importante sobre as imagens que se adaptam sozinha, é que as imagens tem que estar na ordem, da mesma forma que no código a baixo: </p>
+                            
+                        
+                    <div class="base">
+                             &lt;picture>
+                    <p>&lt;source media="(max-width: 700px)" srcset="imagens/fotop.png" type="image/png"> //imagem pequena</p>
+                        
+                    <p>&lt;source media="(max-width:1000px)" srcset="imagens/fotom.png" type="image/png"> //imagem média</p>
+                        
+                    <p>&lt;img src="imagens/fotog.png" alt="imagem flexível">//imagem grande
+                    &lt;/picture></p>
+                    </div>
+                            
+                    
+                        
+                        <p>O atributo "max-width" serve para demilitar o máximo de pixels que imagem poderá aparecer no site, se passar, outra imagem aparecerá no lugar </p>
+                            
+                        <hr>
+
+                </p><br>
+                <h3>Imagens</h3>
+                <p>Imagens podem ser perigosas no site se não usadas corretamente, muitas vezes imagens maiores que o necessário são utilizadas, deixando seu site mais lento. O ideal é que quando você precisar de uma imagem menor, mas o arquivo que você baixou é grande, você modificar e redimensionar, assim deixando o arquivo menor. Alguns aplicativos pode fazer isso para você, como por exemplo o <a href="https://www.gimp.org/" target="_blank">gimp</a> e o <a href="https://www.adobe.com/br/products/photoshop.html" target="_blank">Photoshop</a>.<br>Exemplos de imagens:</p>
+
+                
+
+                <h3>Direitos autorais</h3>
+                <p>muitas imagens podem ter direitos autorais, por isso é importante filtrar as imagens e pesquisar em sites próprios para esse tipo de coisa. Segue abaixo 2 sites que eu uso para baixar imagens sem problemas com direitos autorais:
+            
+                <a href="https://unsplash.com/pt-br" target="_blank"><b>Unsplash</b></a> e o
+            
+                <a href="https://www.pexels.com/pt-br/" target="_blank"><b>Pexels</b></a>.</p>
+
+            <h2>Favicon</h2>
+                <p>favicons são os ícones que aparecem ali na aba do seu navegador, e para colocar eles é muito simples: baixe um png com a imagem que você quer colocar e no <span class="codigo">&lt;body></span> escreva <span class="codigo">&lt;link rel="stylesheet" href="nome_do_seu_arquivo"></span>. Segue a baixo sites onde você pode transformar imagens em ICO, colocar e também criar ICOS. Alguns sites para colocar, criar e transformar imagens em ico.<br><br>
+                
+        
+                <a href="https://www.iconarchive.com/" target="_blank"><b>Iconarchive</b></a>: esse site serve para pegar ícones ja prontos para usar no seu site.<br>
+                
+                <a href="https://www.favicon.cc/" target="_blank" rel="external"><b>Favicon</b></a>: esse site serve para você criar seu favicon</p>
+                
+                <A href="https://favicon.io/" target="_blank">Favicon.io</A>: esse site serve para você transformar imagens em favicons.</P>
+                <hr>
+        </article>
+        <article>
+                <h2>Principais formatações</h2>
+                    <H3>Negrito/destaque</H3>
+                        <p>Nessa frase temos um <b>termo em negrito</b> usando a tag B &#40;não semântica &#41;</p>
+                    
+                        <p>Nesta frase, temos um <strong>termo em destaque</strong> usando a tag strong &#40;semântica&#41;</p>
+                    
+                    <h3>Itálico/ênfase</h3>
+                        <p>Nesta frase, temos um<i>termo em itálico</i> usando a tag I &#40;não semântica&#41;</p>
+                        
+                        <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM &#40;semântico&#41;</p>
+                 
+                    <h3>Texto marcado</h3> 
+                        <p>Podemos criar também <mark style="background-color: deepskyblue" >um texto marcado</mark> usando a tag MARK </p>
+                    
+                    <H3>Texto grande e pequeno</H3>
+                        <p>Temos um texto <big>grande</big> e um texto <small>pequeno</small> usando as tags BIG e SMALL respectivamente;&#40;nota a tag BIG está obsoleta, portanto não se deve usa-lá</p>
+                    
+                    
+                    <h3>Texto deletado</h3>
+                        <p>Temos um <del>texto deletado, desconsiderado</del> usando a tag DEL </p>
+                    
+                    <h3>texto inserido</h3>
+                        <p>podemos marcar <ins>um texto como inserido</ins>  para dar uma ênfase e indicar que ele foi adicionado depois, usando a tag INS &#40;semântico&#41;.</p>
+                    
+                        <p>Existe também o <u>sublinhado</u> com a tag U &#40;não semântica&#41;</p>    
+                
+                    <H3>Texto sobrescristo; sup&#40;em cima&#41; e sub&#40;em baixo&#41;</H3>
+                        <p>Para inserir coisas do tipo x<sup>2</sup>+3</p>
+                        <p>para inserir coisas do tipo H<sub>2</sub>O</p>
+
+                        
+                    <h3>Código fonte</h3>
+                        <p>Tag CODE:serve para colocar um código de forma que de para ler mais facilmente. </p>
+      
+                        <p>Tag PRE: Básicamente serve para colocar um texto igual como está no código. Ex:Sem a tag PRE: </p><br>
+                        
+                        <code>   
+                            num = int(input('Digite um número))
+                            if num % 2 == 0:
+                                print(f'0 númrto {num} é PAR')
+                            else:
+                                print(f'0 número {num} é impar)
+                            print('Fim do programa')
+                        </code><br>
+                
+                            <p>Com a tag PRE:</p>
+                            <pre><code>   
+                                num = int(input('Digite um número))
+                                if num % 2 == 0:
+                                    print(f'0 númrto {num} é PAR')
+                                else:
+                                    print(f'0 número {num} é impar)
+                                print('Fim do programa')
+                            </code></pre>
+
+                    <h3>Citações simples</h3><!-- Q (quote), citação em inglês -->
+                        <p>para fazer pequenas citações use a tag Q (possui semântica) <q>So sei que nada sei.</q></p>
+                    
+                    <h3>Citações completas</h3>
+                        <p>use a tag BLOCKQUOTE para fazer citações completas.Ex:</p>
+                        
+                        <p>Segundo o autor David A.Crowder, no seu livro Construindo Web Site Para Leigos</p>
+                            
+                        <blockquote cite="https://www.google.com.br/books/edition/Construindo_Web_Sites_Para_Leigos_Tradu/xlLcAwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+para+leigos&printsec=frontcover">"A linha  entre perder e ganhar é muito fina se você está conseiderando usar os estranhos aplicativos na Web"</blockquote>
+
+                    <h3>Abreviações</h3>
+                        <P>use a tag ABBR para escrever oque a abreviação siginifica. Ex: <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheet">CSS</abbr></P>
+                            
+                    <h3>Texto invertido</h3>
+                        <P>Use a tag<code> &lt;BDO dir=""</code> para inverter um texto.Ex: <bdo dir="rtl">texto invertido </bdo></P><!-- ltr e rtl -->
+                       <hr>
+        </article> 
+        <article id="listas">
+            <h2>Listas</h2>
+                    <h3>Listas ordenadas</h3>
+                        <P>Lista ordenadas são aquelas que a ordem faz diferença.Para começar uma lista de qualquer número que você quiser, basta seguir o modelo de código a seguir <span class="codigo">&lt;ol start="4"&gt;</span></p><br>
+                        
+                            <oL start="4">
+                            <LI>Vou tomar banho
+                            <LI>Vou voltar a estudar
+                            <li>Depois vou jantar
+                            <li>Dormir
+                            </oL>
+                            
+                        <p><span class="codigo">&lt;ol type="1,i,I,a,A"&gt;</span></p>
+
+                    <h3>Listas não ordenadas</h3>
+                        <P>listas não ordenadas são aquelas que a ordem não faz diferença:</P>
+                            <UL type="">
+                            <LI>Vou tomar banho
+                            <LI>Vou voltar a estudar
+                            <li>Depois vou jantar
+                            <li>Dormir  
+                            </UL>
+                                
+                            <P><span class="codigo">&lt;ul type="disc(padrão), circle, square(quadrado pequeno)"</span></P>
+                        <h3>Juntando listas</h3>
+                            <ol type="I"  >
+                                <LI>Filmes de animação 
+                                <ol type="A">
+                                    <li>Meu malvado favorito
+                                    <li>Soul
+                                    <li>ratatouille
+                                    <li>Encanto
+                                </ol>
+                                    <li>Animes que eu gosto</li>
+                                <ol type="A" start="5">
+                                    <li>Darwin's Game
+                                    <li>Death Note
+                                    <li>Super Crooks
+                                    <li>Castlevania
+              
+                                <p>se quiser começar da letra E, por exemplo um uma sub lista você terá que colocar <code>&lt;ol type="A" start="5"&gt;</code></p>
+                        <h3>Listas de definição</h3>
+                            <p>São aquelas que temos um termo e sua definição,primeiro usamos a tag &lt;dl&gt; para indicar ao navegador que se trata de uma definição ali, depois usamos a tag &lt;dt&gt; para indicar o termo e &lt;dd&gt; para indicar a sua definição. Ex:</p>
+                                <dl>
+                                <dt>HTML</dt>
+                                <dd>linguagem de marcação para a criação do conteúdo de um site</dd>
+                                <dt>CSS</dt>
+                                <dd>Linguagem de marcação para a criação do design de um site</dd>
+                                <dt>JavaScript</dt>
+                                <dd>Linguagem de programação para a criação de interatividade de um site </dd>
+                                </dl>
+                    <hr>
+                </article>
+                <article>
+                    <h2>Sons</h2>
+        
+                        <p>Para conseguir músicas ou aúdios facilmente, você pode acessar o youtube studio, lá haverá várias opções de aúdios e músicas para você escolher<br>
+                            obs:haverá aúdios e músicas que você terá que "dar os créditos" e outros não.</p>
+                    
+                        <p>Agora, para colocar esses sons baixados temos que usar a tag "audio" </p>
+                        <code>&lt;audio src=" controls autoplay>&lt;/audio>
+                        </code>
+                        <p>O 'autoplay', como o nome já sugere, é automático. Isso significa que quando você entra no site, o áudio tocará automaticamente. No entanto, geralmente os navegadores bloqueiam isso.Esse é o jeito mais básico de colocar aúdio no seu site, mas podemos adicionar algumas outras coisas para deixar "mais completo"  </p>
+                    
+                        <p>Existem 3 principais formatos de aúdio, que são eles o<b> mp3, hav </b>e o <b>ogg</b></p>
+
+                        <p>na tag "audio" tem o atríbuto "preload" que define se o aúdio será baixado ou não quando o usuário entrar no site.O mais recomendado segundo o guanabara é o <b>metadata</b>, que usando ele, baixará as infomações básicas sobre o aúdio, e só quando o usuário apertar para rodar o aúdio que ele será baixado por completo. Existem ainda mais duas opções que são o <b>auto</b> que baixará o aúdio assim que o usuário entrar no site(não recomendado pois o seu site só terá sido carregado 100% quando o aúdio também ser carragado) e o <b>none</b>, que não carrega nada.  </p>
+            
+                        <div class="base">&lt;audio preload="metadata" autoplay controls loop muted(não muito recomendado)> 
+                        <p>&lt;source src="audio.mp3" type="audio/mpeg"></p>
+                        <p>&lt;source src="audio.ogg" type="audio/ogg"></p>
+                        <p>&lt;source src="audio.wav" type="audio/wav"></p>
+                        </div>  
+                    
+                        <audio preload="metadata" controls><!-- autoplay -->
+                        <source src="videos_audios_pdfs/audio(exemplo).mp3" type="audio/mpeg">
+                        <source src="videos_audios_pdfs/audio(exemplo).ogg" type="audio/ogg">
+                        </audio> 
+                        <p>Acabei de perceber que o Google Chrome não suporta mp3 e sim o formato wav, por isso é importante colocar vários formatos de áudio(guanabara acabou de falar que wav não é recomendado porque é muito pesado, aí eu coloquei no formato ogg e foi)</p>
+
+                <hr>
+        </article>
+            <h2>Vídeos</h2>
+
+                <p>Eu baixei o programa Handbrake, nele você consegue converter,comprimir seu arquivo.<a href="https://handbrake.fr/" target="_blank" rel="external"> Clique aqui </a>para ir ao site  </p>
+
+                <h3>Inserindo vídeos hospedados localmente, ou seja dentro do meu site</h1>
+        
+                <code><pre>&lt;video src="video.mp4" widht="500" height controls>&lt;/video>
+                </code></pre>
+        
+                <p>O esquema é fazer que nem nos áudios, desse jeito:</p>
+        
+            <div class="base">    
+                <p>&lt;video widht="500" height="340" poster="imagemcapa.png" controls> </p>
+                <p>&lt;source src="video.mp4" type="video/mp4"></p>
+                <p>&lt;source src="video.m4v" type="video/m4v"></p>
+                <p>&lt;source src="video.wav" type="video/wav"></p>
+            </div>
+            
+            <p>o elemtento <b>poster</b> ali serve para você colocar a capa do video.</p>
+
+            <p>Do modo que está acima, a primeira opção que o navegador vai tentar baixar é o mp4, depois o de baixo e etc.<b> Sempre coloque mais de um tipo de arquivo, para que ele seja suportado em diferentes navagadores</b></p>
+
+            <h3>Exemplo</h3>
+
+            <video width="640" height="360" poster="#" controls  loop muted><!-- autoplay-o nome já deixa claro. Para funcionar o autoplay, use muted, pq a maioria dos navegadores bloqueiam o auto,a n ser que vc coloque mutado -->
+            <source src="videos_audios_pdfs/Videobd(gui).mp4" type="video/mp4">
+            </video>
+
+            <h3>Inserindo vídeos externos(fora do seu site) </h3>
+            
+            <p>Para hospedar um video do youtube é bem simples, abra um vídeo do youtube e clique em compartilhar, la terá a opção "incorporar" e é so copiar e colar no seu código! muito simples. A vantagem de pegar do youtube é que o vídeo não pesará no seu site, e sim no próprio youtube(tenha cuidado com direitos autorais dos vídeos)</p>
+
+            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/u9NE0jInb_c?si=jei5O4TiEuZsRr1B&amp;start=442" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    </main>
+    <footer>
+        <p>Feito por Marcos</p>
+    </footer>
+
+</body>
+</html>
